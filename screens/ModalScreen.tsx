@@ -8,9 +8,11 @@ import { Text, View } from '../components/Themed';
 export default function ModalScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Modal</Text>
+      <Text style={styles.title}>Example App</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="/screens/ModalScreen.tsx" />
+      <View style={{margin: 30}}>
+		  <Text style={{fontSize: 18, textAlign: "center"}}>This app is an example of how you can pull content from Agility CMS into a native mobile app.</Text>
+	  </View>
 
       {/* Use a light status bar on iOS to account for the black space above the modal */}
       <StatusBar style={Platform.OS === 'ios' ? 'light' : 'auto'} />
